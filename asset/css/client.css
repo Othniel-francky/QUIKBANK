@@ -1,0 +1,44 @@
+.logo{
+    width: 200px;
+    height: 3rem;
+}
+.deco{
+    width: 10rem;
+    height: 3rem;
+}
+.navEle, .main{
+    width: 71.25rem;
+    margin: 0 auto;
+}
+.main{
+    margin-bottom: 2rem;
+}
+.headEle{
+
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../../images/head.jpeg');
+   background-size: cover;
+   background-repeat: no-repeat;
+    height: 7rem;
+}
+a{
+    text-decoration: none;
+}
+.nav-link {
+    margin-right: 2rem;
+}
+.active-link{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.active{
+    border-bottom: 2px solid black;
+}
+.cards{
+    margin-bottom: 2rem;
+    border-bottom: 1px solid black ;
+}
+.titre{
+    margin-top: 2rem;
+}
+.link-offset-2 {
+    margin-right: 2rem;
+}

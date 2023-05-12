@@ -4,12 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Espace client</title>
     <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../asset/style.css">
+    <link rel="stylesheet" href="../asset/css/client.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid navEle">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse  " id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">
+                <img src="../images/logo.png" class="rounded float-start logo" alt="...">
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Comptes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="virement.html">Virement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Crédité</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Débité</a>
+              </li>
+            </ul>
+              <button class="btn btn-dark deco" type="submit"><i class="bi bi-person-circle"></i>Konan Abraham</button>
+          </div>
+        </div>
+    </nav> 
+    <div class="container-fluid headEle">
+       
+        <div class="d-flex justify-content-center align-items-center p-2">
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
+                <i class="bi bi-chevron-left"></i>
+                Retour
+              </a>
+            <h2 class="text-center text-white ">Tous mes comptes</h2>
+        </div>
+        
+        <ul class="nav justify-content-center p-2 linkEle">
+            <li class="nav-item m-2">
+              <a class="nav-link active-link" aria-current="page" href="#">Tous</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link text-white" href="#">Mes Comptes</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link text-white" href="#">Autre Comptes</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link text-white">Personnaliser</a>
+            </li>
+          </ul>
+    </div>
+    <div class="container-fluid container-md container-sm  main">
+        <h4 class="p-2 titre">Compte Courant</h4>
+        <div class="container container-sm container-md">
+            <div class="row card p-4">
+                <div class="col-lg-12 col-md-10 col-sm-10 cards">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 col-sm-3">
+                            <h6>Compte individuel</h6>
+                        </div>
+                        <div class="col-lg-3 col-sm-3 col-sm-3">
+                            <h6>Kouame konan Abraham</h6>
+                        </div>
+                        <div class="col-lg-3 col-sm-3 col-sm-3">
+                            <button type="button" class="btn btn-outline-secondary">Gerer<i class="bi bi-chevron-down"></i></button>
+                        </div>
+                        <div class="col-lg-3"><h3 class="text-success">+666,66$</h3></div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-10 col-sm-10">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 col-sm-3">
+                            <h6><i class="bi bi-credit-card"></i> Visa permanente</h6>
+                        </div>
+                        <div class="col-lg-3 col-sm-3 col-sm-3">
+                            <h6>Kouame konan Abraham <span>****1***</span></h6>
+                            <p>Carte valide <span>666$</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="p-2 titre">Compte épargne</h4>
+        <div class="container container-md container-sm ">
+            <div class="row card p-4">
+                <div class="col-lg-12 col-md-10 col-sm-5 ">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-3 col-sm-3">
+                            <h6>Caisse d'épargne CI</h6>
+                            <p>LIVRET A</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-5 col-sm-3">
+                            <h6>Kouame konan Abraham</h6>
+                        </div>
+                        <div class="col-lg-4 col-sm-3 col-sm-3">
+                            <button type="button" class="btn btn-outline-secondary">Gerer<i class="bi bi-chevron-down"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="p-2 titre">Crédit</h4>
+        <div class="container">
+            <div class="row card p-4 align-content-center">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>Prêt personnel</h5>
+                            <p>Donnez une vie à vos projets.
+                                Un crédit vous engage et doit être remboursé. Vérifier vos capacité de remboursement avant de vous engager</p>
+                        </div>
+                        <div class="col-lg-6"><button type="button" class="btn btn-outline-secondary">Prêt personnel</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="p-2 titre">Compte familial</h4>
+        <div class="container">
+            <div class="row card p-4 align-content-center">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>Compte familial</h5>
+                            <p>Donnez une vie à votre famille.
+                                Offre toi un compte d’épargne . Pour garantie la sécurité de votre famille,
+                                la famille avant tous!!!</p>
+                        </div>
+                        <div class="col-lg-6"><button type="button" class="btn btn-outline-secondary">Prêt personnel</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #4DB0BA;">
+          © 2020 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">Quick Bank</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+    <script src="../dist/js/bootstrap.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
 </body>
 </html>
