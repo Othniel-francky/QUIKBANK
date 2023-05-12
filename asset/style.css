@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.707),  rgba(0, 0, 0, 0.707)),
+    url(../images/group-img1.png);
+    background-size: cover;  
+}
+nav{
+    height: ;
+}
+.nav_btn{
+    float: right;
+}
+.head_img img{
+    height: 7vh;
+    width: 8vw;
+}
+header h1{
+    text-align: center;
+    color: #FFF;
+    margin: 22rem auto;
+}
+header span{
+    color: #4DB0BA;
+}
+.innover{
+    height: 45vh;
+    padding: 1rem;
+    width: 80%;
+    margin: 2rem auto;
+    background-color: #4DB0BA;
+}
+.inno_img img{
+    height: 35vh;
+    width: 50vw;
+    border-radius: 5px;
+}

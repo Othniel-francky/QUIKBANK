@@ -1,2 +1,0 @@
-# QUIKBANK
-Projet Banque
