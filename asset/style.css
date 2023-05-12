@@ -9,9 +9,7 @@ header{
     url(../images/group-img1.png);
     background-size: cover;  
 }
-nav{
-    height: ;
-}
+
 .nav_btn{
     float: right;
 }
@@ -28,10 +26,6 @@ header span{
     color: #4DB0BA;
 }
 .innover{
-    height: 45vh;
-    padding: 1rem;
-    width: 80%;
-    margin: 2rem auto;
     background-color: #4DB0BA;
 }
 .inno_img img{
