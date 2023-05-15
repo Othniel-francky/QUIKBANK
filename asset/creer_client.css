@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 15vh;
+    width: 100%;
+    background-color: #4DB0BA;
+    padding: 2rem;
+}
+header img{
+    float: left;
+    height: 8vh;
+    width: 13vw;
+}
+header h1{
+    text-align: center;
+    margin: 1rem;
+    color: #FFF;
+}
+.info{
+    margin: 4rem auto;
+}
+.info .input input{
+    height: 5vh;
+    width: 100%;
+    margin: .5rem 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.input{
+    padding: 1rem 0;
+}
+.info .radio input{
+    border: 2px solid #4DB0BA;
+    margin: 1rem;
+    height: 2vh;
+    width: 2vw;
+}

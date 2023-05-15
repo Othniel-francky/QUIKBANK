@@ -3,8 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header{
-    height: 100vh;
+    height: 75vh;
     background-image: linear-gradient( rgba(0, 0, 0, 0.707),  rgba(0, 0, 0, 0.707)),
     url(../images/group-img1.png);
     background-size: cover;  
@@ -14,7 +15,7 @@ header{
     float: right;
 }
 .head_img img{
-    height: 7vh;
+    height: 4vh;
     width: 8vw;
 }
 header h1{
@@ -55,8 +56,6 @@ header span{
     padding: 1rem;
     background-color: #4DB0BA;
 }
-
-
 .question_ins{
     height: 40%;
     padding: 1rem;
@@ -65,7 +64,7 @@ header span{
 }
 .question_img div{
     width: 55%;
-    background-color: #DC3545;
+    background-color: #F5B7BA;
     border-radius: 10px;
     color: #FFF;
     padding: 1rem;
@@ -76,33 +75,24 @@ header span{
     border-radius: 5px;
 }
 .trait_et_rond{
-    height: 35vh;
+    padding: 3rem 2rem;
+    color: #FFF;
 }
-.trait_et_rond .div1{
-    height: 100%;
-    width: 30%;
-    padding: 2rem;
-}
-.trait_et_rond .div2{
-    height: 100%;
-    width: 30%;
-    padding: 2rem;
-}
-.trait_et_rond .div3{
-    height: 100%;
-    width: 30%;
-    padding: 2rem;
-}
-hr{
-    border: 3px solid #D9D9D9;
+.carr{
+    color: #FFF;
+    border-radius: 10px;
+    padding: 1rem;
+    border: none;
+    background-color: #FFF;
 }
 .carré{
-    border: 3px solid #DC3545;
-    width: 20%;
+    border: 5px solid #F5B7BA;
+    width: 55%;
     margin: 2rem auto;
 }
 .trait_et_rond h5{
     text-align: center;
+    color: #000;
 }
 .rond{
     background-color: #4DB0BA;
@@ -111,33 +101,51 @@ hr{
     height: 30%;
     border-radius: 50%;
     margin: 2rem auto;
-    padding: 2rem;
+    padding: 1.1rem 2rem;
 }
 .rond p{
     text-align: center;
+    font-size: 2rem;
 }
-.blog{
-    height: 33vh;
+.email{
+    padding: 2rem;
+    background-color: #F5B7BA;
+}
+.email_el{
+    background-color: #F5B7BA;
+    border: none;
+}
+.email input{
+    height: 4vh;
+    width: 13vw;
+    position: relative;
+}
+.email span{
+    color: #4DB0BA;
+}
+a{
+    text-decoration: none;
+}
+footer{
+    background-color: #4DB0BA;
+    text-align: center;
+    padding: 2rem;
+}
+.foot{
+    background-color: #4DB0BA;
+    border: none;
+}
+
+
+.blog_card{
+    background-color: #4DB0BA;
+    padding: 1rem;
+    margin: 1rem;
+    width: 48%;
 }
 .blog h1{
     text-align: center;
 }
-.blog_content{
-    height: 100%;
+.blog{
     width: 100%;
-}
-.blog_content div{
-    height: 60%;
-    width: 48%;
-    background-color: #DC3545;
-    margin: 1.5rem;
-    border-radius: 5px;
-    background-color: #4DB0BA;
-}
-.blog_content img{
-    padding: 1rem;
-    float: left;
-    height: 100%;
-    width: 35%;
-    border-radius: 5px;
 }

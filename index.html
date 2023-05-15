@@ -13,11 +13,10 @@
     <header class="container-fluid">
         <nav class="navbar d-flex justify-content-between">
             <div class="head_img">
-                <a href="accueil.html"><img src="images/logo.png" alt="" width="30" height="24"></a>
+                <img src="images/logo.png" alt="" width="30" height="24">
             </div>
             <div class="nav_btn">
-                <button type="button" class="btn btn-info">DEVENIR CLIENT</button>
-                <button type="button" class="btn btn-danger">JE SUIS CLIENT</button>
+                <a href="#" class="btn btn-info">DEVENIR CLIENT</a> <a href="page/creer_client.html" class="btn btn-danger">JE SUIS CLIENT</a>
             </div>
         </nav>
         <h1><span>QUICK BANK,</span> La banque prêt de vous</h1>
@@ -38,8 +37,9 @@
                     <br>
                     <br>
                     <span>QUIK BANK,</span> la seul banque Digital 
+                    <br>
+                    <a href="#" class="btn btn-danger">COMMENCER MAINTENANT</a>
                 </h4>
-                <button type="button" class="btn btn-danger">COMMENCER MAINTENANT</button>
             </div>
             
             <img src="images/group-img1.png" alt="">
@@ -99,67 +99,109 @@
                 </h4>
                 <br>
                 <br>
-                <button type="button" class="btn btn-info">COMMENCER MAINTENANT</button>
+                <a href="#" class="btn btn-info">COMMENCER MAINTENANT</a>
             </div>
             
         </div>
     </div>
-    <div class="trait_et_rond container-fluid d-flex justify-content-between">
-        <div class="div1">
-            <div class="carré"></div>
-            <h5>Créer Votre Compte</h5>
-            <div class="rond"><p>1</p></div>
-        </div>
-        <hr>
-        <div class="div2">
-            <div class="carré"></div>
-            <h5>Souscrire à nos offre d’épargne</h5>
-            <div class="rond"><p>2</p></div>
-        </div>
-        <hr>
-        <div class="div3">
-            <div class="carré"></div>
-            <h5>Epargnez avec Quick Bank</h5>
-            <div class="rond"><p>3</p></div>
+
+    <div class="container-fluid trait_et_rond">
+        <div class=" container-fluid ">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-3 col-sm-12 card carr mb-2">
+                    <div class="carré"></div>
+                    <h5>Créer Votre Compte</h5>
+                    <div class="rond">
+                        <p>1</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 card carr mb-2">
+                    <div class="carré"></div>
+                    <h5>Créer Votre Compte</h5>
+                    <div class="rond">
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 card carr mb-2">
+                    <div class="carré"></div>
+                    <h5>Créer Votre Compte</h5>
+                    <div class="rond">
+                        <p>3</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="blog container-fluid">
+    <div class="container-fluid blog">
         <h1>BLOG</h1>
-        <div class="blog_content container-fluid d-flex justify-content-center">
-            <div><img src="images/group-img1.png" alt="">
-                <h3>HELENA MARIMA</h3>
-                <p>Je suis très heureuse d'être votre cliente car vos avez de bon services</p>
-            </div>
-            <div><img src="images/group-img1.png" alt="">
-                <h3>HELENA MARIMA</h3>
-                <p>Merci pour la sécurité que vous m'assurez <br>
-                    Excellent choix de banque
-                </p>
+        <div class=" container-fluid ">
+            <div class="row d-flex justify-content-between">
+                <div class="card mb-3 blog_card">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images/group-img1.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">MARIMA HELENA</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card mb-3 blog_card">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images/group-img1.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">MARIMA HELENA</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-      
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="container-fluid email">
+        <div class="container-fluid ">
+            <div class="row d-flex justify-content-between">
+                <div class="col-6 col-sm-3 card email_el ">
+                    <h5>Nous conctater par email et nous repondrons très vit a vos 
+                        besoins . Avec nous votre sécurité est très importante . <br>
+                        Email : <a href=""><span>QuickBank@gmail.com</span></a></h5>
+                </div>
+                <div class="col-6 col-sm-3 card email_el ">  
+                    <h3>Message</h3>
+                    <div>
+                        <input type="text">
+                        <a href="#" class="btn btn-info">ENVOYER</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
 
-      <div class="card">
-  <img src="..." class="card-img-top" alt="...">
 
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewheres</a>
-  </div>
-</div>
+    <footer class="container-fluid ">
+        <div class="row d-flex justify-content-between">
+            <div class="col-6 col-sm-3 card w-50 foot">
+                <h6>CopyRigth by Quick bank 2023@</h6>
+            </div>
+            <div class="col-6 col-sm-3 card w-50 foot">
+                <h6>Quick Bank ,votre banque rapide</h6>
+            </div>
+        </div>
+    </footer>
 
+
+    
+
+   
     <script src="dist/js/bootstrap.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
 </body>
