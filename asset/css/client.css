@@ -1,3 +1,7 @@
+:root{
+    --bgBtn: #4DB0BA
+}
+
 .logo{
     width: 200px;
     height: 3rem;
@@ -20,6 +24,7 @@
    background-repeat: no-repeat;
     height: 7rem;
 }
+
 a{
     text-decoration: none;
 }
@@ -42,3 +47,12 @@ a{
 .link-offset-2 {
     margin-right: 2rem;
 }
+.btn-valide{
+background-color: var(--bgBtn);
+color: white;
+width: 200px;
+}
+.btn-valide:hover{
+    background-color: var(--bgBtn);
+    color: white;
+    }
