@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <img src="../images/logo.png" alt="">
+        <a href="../index.html"><img src="../images/logo.png" alt=""></a>
         <h1>Créer un nouveau compte</h1>
     </header>
     <div class="container info">
@@ -30,17 +30,22 @@
             <input type="radio" name="choix" class="radio"><label for="text">FEMME</label>
         </div>
         <label for="text">Quel type de compte souhaitez-vous ouvrir* ?</label><br>
-        <div class="btn">
-            <a href="#" class="btn btn-info">Individuel</a> <a href="#" class="btn btn-info">Visa</a>
-        </div><br>
-        <label for="text">Êtes-vous déjà client d’une banque ou de Quick Bank * ?</label><br>
-        <div class="btn">
-            <a href="#" class="btn btn-info">Oui</a> <a href="#" class="btn btn-info">Non</a>
-        </div><br>
-        <label for="text">Avez vous déja une carte visa * ?</label><br>
-        <div class="btn">
-            <a href="#" class="btn btn-info">Oui</a> <a href="#" class="btn btn-info">Non</a>
-        </div><br>
+        <div class="container-fluid row">
+            <div class="div_btn d-flex justify-content-between col-md-4">
+                <a href="#" class="btn btn-info" id="blanc">Individuel</a><a href="" class="btn btn-info" id="bleu">Visa</a>
+            </div><br>
+            <label for="text">Êtes-vous déjà client d’une banque ou de Quick Bank * ?</label><br>
+            <div class="div_btn d-flex justify-content-between col-md-4">
+                <a href="#" class="btn btn-info" id="blanc">Oui</a><a href="#" class="btn btn-info" id="bleu">Non</a>
+            </div><br>
+            <label for="text">Avez vous déja une carte Non * ?</label><br>
+            <div class="div_btn d-flex justify-content-between col-md-4">
+                <a href="#" class="btn btn-info" id="blanc">Oui</a><a href="#" class="btn btn-info" id="bleu">Non</a>
+            </div><br>
+        </div>
+        <div class="valide">
+            <a href="#" class="btn btn-info" id="btnVal">Creer mon compte</a>
+        </div>
     </div>
 
     <script src="../dist/js/bootstrap.min.js"></script>

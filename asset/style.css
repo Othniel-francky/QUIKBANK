@@ -149,3 +149,12 @@ footer{
 .blog{
     width: 100%;
 }
+#bleu{
+   color: #FFF;
+   border-radius: 40px;
+}
+#rouge{
+    border-radius: 40px;
+    background-color: #F5B7BA;
+    border: 1px solid #F5B7BA;
+}

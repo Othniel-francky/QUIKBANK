@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 header{
     height: 15vh;
     width: 100%;
@@ -38,4 +41,28 @@ header h1{
     margin: 1rem;
     height: 2vh;
     width: 2vw;
+}
+.div_btn button{
+    height: 3vh;
+    width: 6vw;
+}
+#bleu{
+    border-radius: 40px;
+    color: #FFF;
+}
+#blanc{
+    background-color: #FFF;
+    border-radius: 40px;
+    color: #4DB0BA;
+}
+.valide{
+    margin: 3rem auto;
+    height: 5vh;
+    width: 10vw;
+}
+.valide #btnVal{
+    margin: 1rem auto;
+    color: #FFF;
+    border-radius: 40px;
+    padding: 1rem 2rem;
 }

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 15vh;
+    width: 100%;
+    background-color: #4DB0BA;
+    padding: 2rem;
+}
+header img{
+    float: left;
+    height: 8vh;
+    width: 13vw;
+}
+header h1{
+    text-align: center;
+    margin: 1rem;
+    color: #FFF;
+}
+.cadreCont{
+    background-color: #F7F7F7;
+    padding: 4rem;
+}
+.cadre{
+    border: 2px solid #4DB0BA;
+    border-radius: 20px;
+    padding: 4rem;
+}
+input{
+    width: 100%;
+    height: 9vh;
+    border: 1px solid #DDE2E8;
+    margin: 1rem 0;
+}
+h4{
+    text-align: center;
+}
+.btn-group{
+    width: 100%;
+}
+#boutton{
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #000;
+    font-size: 2rem;
+    border: 1px solid #4DB0BA;
+    margin: .1rem;
+    height: 15vh;
+}
+#boutton:hover{
+    background-color: #F7F7F7;
+    color: #4DB0BA;
+}
+.btnBtn{
+    margin: 2rem auto;
+    width: 20%;
+}
+#rouge{
+    padding: 1.5rem;
+    background-color: #F5B7BA;
+    border: 1px solid #F5B7BA;
+    border-radius: 40px;
+}
+#rouge:hover{
+    background-color: #cd111a78;
+    color: #F7F7F7;
+}
+.code a {
+    text-decoration: none;
+    color: #000;
+}
+.code span{
+    color: #4DB0BA;
+}
