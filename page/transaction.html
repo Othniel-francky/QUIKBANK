@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../asset/transaction.css">
+    <title>Transaction</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head_img">
+            <img src="../images/logo.png" alt="" width="150" height="100">
+        </div>
+        <div class="contain">
+        <div class="">
+            <h3>Créditez ou débité votre compte 
+                bancaire rapidement et 
+                facilement</h3>
+        </div>
+        <p class="text-justify">Lorsqu’on possède un compte bancaire, il faut 
+            régulièrement créditer son compte. En d’autres mots, 
+            vous devez ajouter de l’argent sur votre compte afin de 
+            disposer d’un solde suffisant pour pouvoir effectuer des 
+            dépenses ou régler de futurs paiements.</p> 
+        <div class="button d-flex justify-content-around">
+            <button type="button" class="btn  btn-lg coul debit">Débiter mon compte</button>
+            <button type="button" class="btn  btn-lg coul">Créditer mon compte</button>
+        </div>  
+    </div>
+   
+    </div>
+    <h1><span>QUICK BANK,</span> La banque prêt de vous</h1>
+    <footer class="bg-light text-center text-lg-start fixed-bottom">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #4DB0BA;">
+          © 2020 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">Quick Banks</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <script>
+        let debit = document.querySelector('.debit')
+        debit.addEventListener('click', ()=>{
+            window.location.href='tran_debite.html'
+        })
+      </script>
+      <script src="../dist/js/bootstrap.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+</body>
+</html>
