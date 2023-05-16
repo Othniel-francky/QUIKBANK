@@ -22,17 +22,33 @@
    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('../../images/head.jpeg');
    background-size: cover;
    background-repeat: no-repeat;
-    height: 7rem;
+    height: 8rem;
 }
-
+.btn-global{
+    width: 10rem;
+    background-color: var(--bgBtn);
+    color: white;
+}
+.btn-global-out{
+    width: 10rem;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+}
+.btn-global:hover{
+    
+    background-color: var(--bgBtn);
+    color: white;
+}
 a{
     text-decoration: none;
+    color: aliceblue;
 }
 .nav-link {
     margin-right: 2rem;
 }
 .active-link{
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    color: blue;
 }
 .active{
     border-bottom: 2px solid black;
@@ -55,4 +71,7 @@ width: 200px;
 .btn-valide:hover{
     background-color: var(--bgBtn);
     color: white;
-    }
+}
+.h-epar-btn{
+    height: 3.5rem;
+}

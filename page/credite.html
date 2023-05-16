@@ -32,7 +32,10 @@
                 <a class="nav-link active" href="#">Crédité</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Débité</a>
+                <a class="nav-link " href="debite.html">Débité</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Action Perso</a>
               </li>
             </ul>
               <button class="btn btn-dark deco" type="submit"><i class="bi bi-person-circle"></i>Konan Abraham</button>
@@ -40,14 +43,23 @@
         </div>
     </nav> 
     <div class="container-fluid headEle p-2">
-        <div class="d-flex justify-content-center align-items-center">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
-                <i class="bi bi-chevron-left"></i>
-                Retour
-            </a>
-            <h2 class="text-center text-white ">Crédité votre Comptes</h2>
+        <div class="row  d-flex justify-content-between">
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-center align-items-center">
+              <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover hBack" href="#">
+                  <i class="bi bi-chevron-left"></i>
+                  Retour
+              </a>
+              <h2 class="text-center text-white ">Crédité votre Comptes</h2>
+            </div>
+
+          </div>
+          <div class="col-lg-6">
+            <h5 class="text-success">+666,6$</h5>
+            <p class="text-white">Solde actuel</p>
+          </div>
+
         </div>
-        
     </div>
     <div class="container-fluid container-md container-sm  main p-2">
         <div class="row d-flex justify-content-between">
@@ -70,24 +82,35 @@
           <form action="">
             <div class="row">
               <div class="mb-2 col-lg-6 col-sm-12 col-md-6 p-4">
-                <label for="staticEmail" class="form-label">Numéro de compte du client</label>
-                  <input type="text"  class="form-control form-control-lg" id="staticEmail" placeholder="BQk-CI 4567 899 0992 56787" required>
+                <label for="staticEmail" class="form-label">Moyen du transfert</label>
+                  <input type="text"  class="form-control form-control-lg" id="staticEmail" placeholder="(orange),(Mtn),(Moov)" required>
+              </div>
+              <div class="mb-2 col-lg-6 col-sm-12 col-md-6 p-4">
+                <label for="staticEmail" class="form-label">Code valide</label>
+                  <input type="text"  class="form-control form-control-lg col-6" id="staticEmail" placeholder="0000" required>
               </div>
               <div class="mb-2 col-lg-6 col-sm-12 col-md-6 p-4">
                 <label for="staticEmail" class="form-label">Montant</label>
-                  <input type="number"  class="form-control form-control-lg col-6" id="staticEmail" placeholder="Montant" required>
+                  <input type="text"  class="form-control form-control-lg" id="staticEmail" placeholder="20000"  required>
               </div>
               <div class="mb-2 col-lg-6 col-sm-12 col-md-6 p-4">
-                <label for="staticEmail" class="form-label">Email du client</label>
-                  <input type="email"  class="form-control form-control-lg" id="staticEmail" placeholder="exemple@gmail.com"  required>
+                <label for="staticEmail" class="form-label">Numéro</label>
+                  <input type="number"  class="form-control form-control-lg" id="staticEmail"  placeholder="0141822918" required>
               </div>
+            </div>
+            <div class="row d-flex justify-content-center">
               <div class="mb-2 col-lg-6 col-sm-12 col-md-6 p-4">
                 <label for="staticEmail" class="form-label">code secret</label>
                   <input type="email"  class="form-control form-control-lg" id="staticEmail"  placeholder="br79" required>
               </div>
             </div>
-            <div class="d-flex justify-content-center">
-              <button type="button" class="btn btn-valide" type="button">Valider</button>
+            <div class=" row d-flex justify-content-between">
+              <div class="col-lg-6">
+                <p>Vous avez la possibilité de créditer votre compte dans un point de relais</p>
+              </div>
+              <div class="col-lg-6">
+                <button type="button" class="btn btn-valide" type="button">Valider</button>
+              </div>
             </div>
           </form>
         </div>
@@ -100,6 +123,13 @@
         </div>
         <!-- Copyright -->
       </footer>
+
+      <script>
+        let hback = document.querySelector(".hBack")
+       hback.addEventListener("click", function(e){
+           window.history.back();
+       });
+     </script>
 
 
     <script src="../dist/js/bootstrap.js"></script>
