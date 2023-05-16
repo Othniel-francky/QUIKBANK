@@ -3,3 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.coul{
+    background-color: #4DB0BA;
+    border: none;
+    color: white;
+}
+
+.coul:hover{
+    background-color: #4DB0BA;
+    color: white;
+}
