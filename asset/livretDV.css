@@ -49,7 +49,42 @@ nav a{
     text-decoration: none;
     color: #FFF;
 }
-
+.menu a:hover{
+    color: rgba(255, 255, 255, 0.334);
+}
+.menu .historique p{
+    margin: 2rem;
+}
+.livret{
+    padding: 7rem;
+}
+.tableua{
+    margin: 2rem 0;
+    border: 1px solid #000;
+}
+th{
+    height: 5vh;
+}
+#detail{
+    background-color: #4DB0BA;
+    color: #FFF;
+    border: 1px solid #4DB0BA;
+}
+#detail:hover{
+    background-color: #FFF;
+    color: #4DB0BA;
+    border: 1px solid #4DB0BA;
+}
+#noire{
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #000;
+}
+#noire:hover{
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #000;
+}
 
 
 footer{

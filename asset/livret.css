@@ -73,14 +73,14 @@ footer{
     border: none;
 }
 #rouge{
-    background-color: #FFF;
     padding: 1rem;
     font-size: 1.5rem;
-    border: 1px solid #000;
+    background-color: #FFF;
     color: #000;
+    border: 1px solid #000;
 }
 #rouge:hover{
-    background-color: #4DB0BA;
-    border: 1px solid #4DB0BA;
+    background-color: #000;
     color: #FFF;
+    border: 1px solid #000;
 }
