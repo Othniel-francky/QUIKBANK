@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: azure;
+}
 
 header{
     height: 75vh;
@@ -64,7 +67,7 @@ header span{
 }
 .question_img div{
     width: 55%;
-    background-color: #F5B7BA;
+    background-color: #cd853f;
     border-radius: 10px;
     color: #FFF;
     padding: 1rem;
@@ -86,7 +89,7 @@ header span{
     background-color: #FFF;
 }
 .carré{
-    border: 5px solid #F5B7BA;
+    border: 5px solid #cd853f;
     width: 55%;
     margin: 2rem auto;
 }
@@ -109,10 +112,10 @@ header span{
 }
 .email{
     padding: 2rem;
-    background-color: #F5B7BA;
+    background-color: #cd853f;
 }
 .email_el{
-    background-color: #F5B7BA;
+    background-color: #cd853f;
     border: none;
 }
 .email input{
@@ -155,6 +158,6 @@ footer{
 }
 #rouge{
     border-radius: 40px;
-    background-color: #F5B7BA;
-    border: 1px solid #F5B7BA;
+    background-color: #cd853f;
+    border: 1px solid #cd853f;
 }
