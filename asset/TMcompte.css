@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    padding: 1rem;
+}
+nav img{
+    height: 5vh;
+    width: 8vw;
+}
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+ul li{
+    margin: 0 .5rem;
+}
+nav a{
+    color: #000;
+    text-decoration: none;
+}
+.nom{
+    color: aliceblue;
+    background-color: #000;
+    padding: .2rem;
+    border-radius: 5px;
+}
+.menu{
+    padding: 2rem;
+    background: url(../images/head.jpeg);
+    background-size: cover;
+    color: #FFF;
+}
+.menu h2{
+    color: #0EFF51;
+}
+.menu span{
+    font-size: 1rem;
+    color: #FFF;
+}
+.menu a{
+    text-decoration: none;
+    color: #FFF;
+}
+.menu a:hover{
+    color: rgba(255, 255, 255, 0.334);
+}
+.menu .historique p{
+    margin: 2rem;
+}
+.souscrire{
+    padding: 5rem;
+}
+.souscrire .div{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0.1px #000;
+}
+.div span{
+    padding: .6rem;
+    background-color: yellow;
+    color: #FFF;
+    border-radius: 5px;
+    margin: .3rem;
+}
+#bton{
+    background-color: #FFF;
+    color: #000;
+    border: 1px solid #000;
+}
+#bton:hover{
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #000;
+}
+footer{
+    background-color: #4DB0BA;
+    text-align: center;
+    padding: 2rem;
+}
+.foot{
+    background-color: #4DB0BA;
+    border: none;
+}

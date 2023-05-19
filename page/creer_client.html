@@ -5,9 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/bootstrap.css">
     <link rel="stylesheet" href="../asset/creer_client.css">
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+        <h1>Créer un nouveau compte</h1>
+    </header>
+    <div class="container info">
+        <div class="input">
+            <input type="text" placeholder="Nom *"><br>
+            <input type="text" placeholder="Prenom *"><br>
+            <input type="text" placeholder="Adresse *"><br>
+            <input type="text" placeholder="Ville *"><br>
+            <input type="text" placeholder="Contact *"><br>
+            <input type="text" placeholder="Email *"><br>
+            <input type="text" placeholder="Confirmation de votre email *">
+        </div>
+        <div class="radio">
+            <h4>SEXE</h4>
+            <input type="radio" name="choix" class="radio"><label for="text">HOMME</label>
+            <input type="radio" name="choix" class="radio"><label for="text">FEMME</label>
+        </div>
+        <label for="text">Quel type de compte souhaitez-vous ouvrir* ?</label><br>
+        <div class="container-fluid row">
+            <div class="div_btn d-flex justify-content-between col-md-4">
+                <a href="#" class="btn btn-info" id="blanc">Individuel</a><a href="" class="btn btn-info" id="bleu">Visa</a>
+            </div><br>
+            <label for="text">Êtes-vous déjà client d’une banque ou de Quick Bank * ?</label><br>
+            <div class="div_btn d-flex justify-content-between col-md-4">
+                <a href="#" class="btn btn-info" id="blanc">Oui</a><a href="#" class="btn btn-info" id="bleu">Non</a>
+            </div><br>
+            <label for="text">Avez vous déja une carte Non * ?</label><br>
+            <div class="div_btn d-flex justify-content-between col-md-4">
+                <a href="#" class="btn btn-info" id="blanc">Oui</a><a href="#" class="btn btn-info" id="bleu">Non</a>
+            </div><br>
+        </div>
+        <div class="valide">
+            <a href="#" class="btn btn-info" id="btnVal">Creer mon compte</a>
+        </div>
+    </div>
+
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="../dist/js/bootstrap.js"></script>
 </body>
 </html>
