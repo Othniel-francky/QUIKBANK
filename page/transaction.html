@@ -26,9 +26,9 @@
             vous devez ajouter de l’argent sur votre compte afin de 
             disposer d’un solde suffisant pour pouvoir effectuer des 
             dépenses ou régler de futurs paiements.</p> 
-        <div class="button d-flex justify-content-around">
+        <div class="button d-flex justify-content-around p-5">
             <button type="button" class="btn  btn-lg coul debit">Débiter mon compte</button>
-            <button type="button" class="btn  btn-lg coul">Créditer mon compte</button>
+            <button type="button" class="btn  btn-lg coul credit">Créditer mon compte</button>
         </div>  
     </div>
    
@@ -43,7 +43,11 @@
         <!-- Copyright -->
       </footer>
       <script>
+        let credit = document.querySelector('.credit')
         let debit = document.querySelector('.debit')
+        credit.addEventListener('click', ()=>{
+            window.location.href='tran_credit.html'
+        })
         debit.addEventListener('click', ()=>{
             window.location.href='tran_debite.html'
         })
