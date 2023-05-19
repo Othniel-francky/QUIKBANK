@@ -29,10 +29,10 @@
                 <a class="nav-link" href="virement.html">Virement</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Crédité</a>
+                <a class="nav-link " href="credite.html">Crédité</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">Débité</a>
+                <a class="nav-link " href="debite.html">Débité</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="#">Action Perso</a>
@@ -80,7 +80,7 @@
                             <h6>Kouame konan Abraham</h6>
                         </div>
                         <div class="col-lg-3 col-sm-6 col-md-6">
-                            <button type="button" class="btn btn-outline-secondary">Gerer<i class="bi bi-chevron-down"></i></button>
+                            <button type="button" class="btn btn-outline-secondary compt">Gerer<i class="bi bi-chevron-down"></i></button>
                         </div>
                         <div class="col-lg-3 col-sm-6 col-md-6"><h3 class="text-success">+666,66$</h3></div>
                     </div>
@@ -111,7 +111,7 @@
                             <h6>Kouame konan Abraham</h6>
                         </div>
                         <div class="col-lg-4 col-md-12 col-sm-12">
-                            <button type="button" class="btn btn-outline-secondary">Gerer<i class="bi bi-chevron-down"></i></button>
+                            <button type="button" class="btn btn-outline-secondary eparg">Gerer<i class="bi bi-chevron-down"></i></button>
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,18 @@
         <!-- Copyright -->
       </footer>
 
+      <script>
+        let compt = document.querySelector(".compt");
+        let eparg = document.querySelector('.eparg');
 
+        compt.addEventListener("click", ()=>{
+            window.location.href = "historique.html"
+        })
+
+        eparg.addEventListener('click', ()=>{
+            window.location.href = "epagne.html";
+        })
+      </script>
     <script src="../dist/js/bootstrap.js"></script>
     <script src="../dist/js/bootstrap.min.js"></script>
 </body>
