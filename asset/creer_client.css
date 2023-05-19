@@ -7,62 +7,60 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    height: 15vh;
     width: 100%;
     background-color: #4DB0BA;
-    padding: 2rem;
+    padding: 1rem;
 }
 header img{
     float: left;
-    height: 8vh;
-    width: 13vw;
+    height: 5vh;
+    width: 5vw;
 }
-header h1{
+header h2{
     text-align: center;
-    margin: 1rem;
     color: #FFF;
 }
-.info{
-    margin: 4rem auto;
+.auto{
+    margin: auto;
+    width: 70%;
+    padding: 1rem;
 }
-.info .input input{
-    height: 5vh;
+.bank{
+    background-color: #FFF;
     width: 100%;
+}
+.ipt input{
+    height: 5vh;
     margin: .5rem 0;
     border-top: none;
     border-left: none;
     border-right: none;
-}
-.input{
-    padding: 1rem 0;
-}
-.info .radio input{
-    border: 2px solid #4DB0BA;
-    margin: 1rem;
-    height: 2vh;
-    width: 2vw;
-}
-.div_btn button{
-    height: 3vh;
-    width: 6vw;
+    width: 100%;
 }
 #bleu{
     border-radius: 40px;
     color: #FFF;
+    background-color: #4DB0BA;
+    border: 1px solid #4DB0BA;
 }
 #blanc{
     background-color: #FFF;
     border-radius: 40px;
     color: #4DB0BA;
 }
-.valide{
-    margin: 3rem auto;
-    height: 5vh;
-    width: 10vw;
-}
-.valide #btnVal{
-    margin: 1rem auto;
-    color: #FFF;
+
+#bttn{
+    background-color: #4DB0BA;
     border-radius: 40px;
-    padding: 1rem 2rem;
+    color: #FFF;
+    border: 1px solid #4DB0BA;
+}
+footer{
+    background-color: #4DB0BA;
+    text-align: center;
+    padding: 2rem;
+}
+.foot{
+    background-color: #4DB0BA;
+    border: none;
 }

@@ -10,44 +10,67 @@
     <link rel="stylesheet" href="../asset/creer_client.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img src="../images/logo.png" alt=""></a>
-        <h1>Créer un nouveau compte</h1>
-    </header>
-    <div class="container info">
-        <div class="input">
-            <input type="text" placeholder="Nom *"><br>
-            <input type="text" placeholder="Prenom *"><br>
-            <input type="text" placeholder="Adresse *"><br>
-            <input type="text" placeholder="Ville *"><br>
-            <input type="text" placeholder="Contact *"><br>
-            <input type="text" placeholder="Email *"><br>
-            <input type="text" placeholder="Confirmation de votre email *">
-        </div>
-        <div class="radio">
-            <h4>SEXE</h4>
-            <input type="radio" name="choix" class="radio"><label for="text">HOMME</label>
-            <input type="radio" name="choix" class="radio"><label for="text">FEMME</label>
-        </div>
-        <label for="text">Quel type de compte souhaitez-vous ouvrir* ?</label><br>
-        <div class="container-fluid row">
-            <div class="div_btn d-flex justify-content-between col-md-4">
-                <a href="#" class="btn btn-info" id="blanc">Individuel</a><a href="" class="btn btn-info" id="bleu">Visa</a>
-            </div><br>
-            <label for="text">Êtes-vous déjà client d’une banque ou de Quick Bank * ?</label><br>
-            <div class="div_btn d-flex justify-content-between col-md-4">
-                <a href="#" class="btn btn-info" id="blanc">Oui</a><a href="#" class="btn btn-info" id="bleu">Non</a>
-            </div><br>
-            <label for="text">Avez vous déja une carte Non * ?</label><br>
-            <div class="div_btn d-flex justify-content-between col-md-4">
-                <a href="#" class="btn btn-info" id="blanc">Oui</a><a href="#" class="btn btn-info" id="bleu">Non</a>
-            </div><br>
-        </div>
-        <div class="valide">
-            <a href="#" class="btn btn-info" id="btnVal">Creer mon compte</a>
-        </div>
-    </div>
+   <div>
+        <header>
+            <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+            <h2>Créer un nouveau compte</h2>
+        </header>
+        <div class="container auto">
+            <div class="container bank">
+                <div class="ipt">
+                    <input type="text" placeholder="Nom *"><br>
+                    <input type="text" placeholder="Prenom *"><br>
+                    <input type="text" placeholder="Adresse *"><br>
+                    <input type="text" placeholder="Ville *"><br>
+                    <input type="text" placeholder="Contact *"><br>
+                    <input type="text" placeholder="Email *"><br>
+                    <input type="text" placeholder="Confirmation de votre email *">
+                </div>
+            </div>
 
+            <div class="container milieu">
+                <div class="container sexe">
+                    <h4><b>SEXE</b></h4>
+                    <div class="container d-flex justify-content-between">
+                        <div><input type="radio" name="choix" class="radio"><label for="text">HOMME</label></div>
+                        <div><input type="radio" name="choix" class="radio"><label for="text">FEMME</label></div>
+                    </div>
+                </div>
+                <div class="container-fluid row">
+                    <label for="text">Quel type de compte souhaitez-vous ouvrir* ?</label><br>
+                    <div class="container">
+                        <div class="container d-flex justify-content-between">
+
+                            <a href="#" class="btn btn-info" id="blanc">Individuel</a><a href="" class="btn btn-info" id="bleu">Visa</a>
+                        </div><br>
+                        <label for="text">Êtes-vous déjà client d’une banque ou de Quick Bank * ?</label><br>
+                        <div class="container d-flex justify-content-between">
+                            <a href="#" class="btn btn-info" id="blanc">Oui</a><a href="#" class="btn btn-info" id="bleu">Non</a>
+                        </div><br>
+                        <label for="text">Avez vous déja une carte Non * ?</label><br>
+                        <div class="container d-flex justify-content-between">
+                            <a href="#" class="btn btn-info" id="blanc">Oui</a><a href="#" class="btn btn-info" id="bleu">Non</a>
+                        </div><br>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="button" class="btn btn-lg" id="bttn">Créer mon compte</button>
+                </div>
+            </div>
+
+
+    </div>
+    <footer class="container-fluid ">
+        <div class="row d-flex justify-content-between">
+            <div class="col-6 col-sm-3 card w-50 foot">
+                <h6>CopyRigth by Quick bank 2023@</h6>
+            </div>
+             <div class="col-6 col-sm-3 card w-50 foot">
+                 <h6>Quick Bank ,votre banque rapide</h6>
+            </div>
+        </div>
+    </footer>
+   
     <script src="../dist/js/bootstrap.min.js"></script>
     <script src="../dist/js/bootstrap.js"></script>
 </body>
