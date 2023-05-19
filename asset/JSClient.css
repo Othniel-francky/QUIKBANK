@@ -7,24 +7,22 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    height: 15vh;
     width: 100%;
     background-color: #4DB0BA;
-    padding: 2rem;
+    padding: 1rem;
 }
 header img{
     float: left;
-    height: 8vh;
-    width: 13vw;
+    height: 5vh;
+    width: 5vw;
 }
-header h1{
+header h2{
     text-align: center;
-    margin: 1rem;
     color: #FFF;
 }
 .cadreCont{
     background-color: #F7F7F7;
-    padding: 4rem;
+    padding: 6rem;
 }
 .cadre{
     border: 2px solid #4DB0BA;
@@ -33,9 +31,13 @@ header h1{
 }
 input{
     width: 100%;
-    height: 9vh;
+    height: 3rem;
     border: 1px solid #DDE2E8;
     margin: 1rem 0;
+}
+.container-div{
+    width: 50%;
+
 }
 h4{
     text-align: center;
@@ -47,10 +49,10 @@ h4{
     border-radius: 5px;
     background-color: #FFF;
     color: #000;
-    font-size: 2rem;
+    font-size: 1.4rem;
     border: 1px solid #4DB0BA;
     margin: .1rem;
-    height: 15vh;
+    height: 8vh;
 }
 #boutton:hover{
     background-color: #F7F7F7;
@@ -60,11 +62,10 @@ h4{
     margin: 2rem auto;
     width: 20%;
 }
-#rouge{
-    padding: 1.5rem;
+.rouge{
+    color: white;
     background-color: #F5B7BA;
     border: 1px solid #F5B7BA;
-    border-radius: 40px;
 }
 #rouge:hover{
     background-color: #cd111a78;
@@ -76,4 +77,14 @@ h4{
 }
 .code span{
     color: #4DB0BA;
+}
+
+footer{
+    background-color: #4DB0BA;
+    text-align: center;
+    padding: 2rem;
+}
+.foot{
+    background-color: #4DB0BA;
+    border: none;
 }
