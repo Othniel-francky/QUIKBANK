@@ -29,13 +29,10 @@
                 <a class="nav-link" href="virement.html">Virement</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="credite.html">Crédité</a>
+                <a class="nav-link " href="#">Crédité</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="debite.html">Débité</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">Action Perso</a>
+                <a class="nav-link " href="#">Débité</a>
               </li>
             </ul>
               <button class="btn btn-dark deco" type="submit"><i class="bi bi-person-circle"></i>Konan Abraham</button>
@@ -45,7 +42,7 @@
     <div class="container-fluid headEle">
        
         <div class="d-flex justify-content-center align-items-center p-2">
-            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover hBack" href="#">
+            <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
                 <i class="bi bi-chevron-left"></i>
                 Retour
               </a>
@@ -71,26 +68,26 @@
         <h4 class="p-2 titre">Compte Courant</h4>
         <div class="container container-sm container-md">
             <div class="row card p-4">
-                <div class="col-lg-12 col-md-10 col-sm-10 cards">
+                <div class="col-lg-12 col-md-12 col-sm-12 cards">
                     <div class="row">
-                        <div class="col-lg-3 col-sm-3 col-sm-3">
+                        <div class="col-lg-3 col-sm-6 col-md-6">
                             <h6>Compte individuel</h6>
                         </div>
-                        <div class="col-lg-3 col-sm-3 col-sm-3">
+                        <div class="col-lg-3 col-sm-6 col-md-3">
                             <h6>Kouame konan Abraham</h6>
                         </div>
-                        <div class="col-lg-3 col-sm-3 col-sm-3">
-                            <button type="button" class="btn gerer btn-outline-secondary">Gerer<i class="bi bi-chevron-down"></i></button>
+                        <div class="col-lg-3 col-sm-6 col-md-6">
+                            <button type="button" class="btn btn-outline-secondary">Gerer<i class="bi bi-chevron-down"></i></button>
                         </div>
-                        <div class="col-lg-3"><h3 class="text-success">+666,66$</h3></div>
+                        <div class="col-lg-3 col-sm-6 col-md-6"><h3 class="text-success">+666,66$</h3></div>
                     </div>
                 </div>
                 <div class="col-lg-12 col-md-10 col-sm-10">
                     <div class="row">
-                        <div class="col-lg-3 col-sm-3 col-sm-3">
+                        <div class="col-lg-3 col-sm-6 col-md-6">
                             <h6><i class="bi bi-credit-card"></i> Visa permanente</h6>
                         </div>
-                        <div class="col-lg-3 col-sm-3 col-sm-3">
+                        <div class="col-lg-3 col-sm-6 col-md-6">
                             <h6>Kouame konan Abraham <span>****1***</span></h6>
                             <p>Carte valide <span>666$</span></p>
                         </div>
@@ -103,15 +100,15 @@
             <div class="row card p-4">
                 <div class="col-lg-12 col-md-10 col-sm-5 ">
                     <div class="row">
-                        <div class="col-lg-4 col-sm-3 col-sm-3">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
                             <h6>Caisse d'épargne CI</h6>
                             <p>LIVRET A</p>
                         </div>
-                        <div class="col-lg-4 col-sm-5 col-sm-3">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
                             <h6>Kouame konan Abraham</h6>
                         </div>
-                        <div class="col-lg-4 col-sm-3 col-sm-3">
-                            <button type="button" class="btn epargn  btn-outline-secondary">Gerer<i class="bi bi-chevron-down"></i></button>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <button type="button" class="btn btn-outline-secondary">Gerer<i class="bi bi-chevron-down"></i></button>
                         </div>
                     </div>
                 </div>
@@ -133,7 +130,7 @@
             </div>
         </div>
         <h4 class="p-2 titre">Compte familial</h4>
-        <div class="container mb-5">
+        <div class="container">
             <div class="row card p-4 align-content-center">
                 <div class="col-lg-12">
                     <div class="row">
@@ -143,13 +140,13 @@
                                 Offre toi un compte d’épargne . Pour garantie la sécurité de votre famille,
                                 la famille avant tous!!!</p>
                         </div>
-                        <div class="col-lg-6"><button type="button" class="btn btn-outline-secondary">Offrez-vous</button></div>
+                        <div class="col-lg-6"><button type="button" class="btn btn-outline-secondary">Prêt personnel</button></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="bg-light text-center text-lg-start fixed-bottom">
+    <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: #4DB0BA;">
           © 2020 Copyright:
@@ -157,25 +154,7 @@
         </div>
         <!-- Copyright -->
       </footer>
-      <script>
-        let gerer = document.querySelector(".gerer");
-        let eparg = document.querySelector(".epargn");
-        let hback = document.querySelector(".hBack")
-        
 
-        eparg.addEventListener("click", ()=>{
-            window.location.href = "epagne.html"
-        })
-
-        gerer.addEventListener("click", ()=>{
-            window.location.href = "historique.html"
-        })
-        
-        hback.addEventListener("click", function(e){
-            window.history.back();
-        });
-
-      </script>
 
     <script src="../dist/js/bootstrap.js"></script>
     <script src="../dist/js/bootstrap.min.js"></script>
