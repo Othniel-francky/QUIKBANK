@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virement</title>
+    <title>Ajout</title>
     <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../dist/css/bootstrap.css">
     <link rel="stylesheet" href="../asset/css/client.css">
@@ -26,7 +26,7 @@
                 <a class="nav-link " aria-current="page" href="espaceClient.html">Comptes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Virement</a>
+                <a class="nav-link " href="virement.html">Virement</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="credite.html">Crédité</a>
@@ -35,7 +35,7 @@
                 <a class="nav-link " href="debite.html">Débité</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="perso.html">Action Perso</a>
+                <a class="nav-link active" href="perso.html">Action Perso</a>
               </li>
             </ul>
               <button class="btn btn-dark deco" type="submit"><i class="bi bi-person-circle"></i>Konan Abraham</button>
@@ -43,7 +43,7 @@
         </div>
     </nav> 
     <div class="container-fluid headEle p-2">
-      <div class="row  d-flex justify-content-between">
+      <div class="row">
         <div class="col-lg-6">
           <div class="d-flex justify-content-center align-items-center">
             <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover hBack" href="#">
@@ -52,7 +52,6 @@
             </a>
             <h2 class="text-center text-white ">Effectuez un virement</h2>
           </div>
-
         </div>
         <div class="col-lg-6">
           <h5 class="text-success">+666,6$</h5>
@@ -61,61 +60,29 @@
       </div>
   </div>
     <div class="container-fluid container-md container-sm  main p-2">
-        <div class="row d-flex justify-content-between">
-            <div class="col-lg-5">
-              <div class="card w-100">
-                <div class="card-body">
-                  <div class="card-title d-flex justify-content-between">
-                    <h5>COMPTE DE CHEQUES</h5>
-                    <h5>+6666,66$</h5>
-                  </div>
-                  <p class="card-text"><i class="bi bi-person"></i> N°:xxxxxxxxxxxxxxxxx</p>
+      <form action="">
+        <div class="row-cols-lg d-flex justify-content-center">
+              <div class="col-lg-6">
+                <label for="number">Numéro du compte</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Banque</option>
+                    <option value="1">BNI</option>
+                    <option value="2">BICICI</option>
+                    <option value="3">Société générale</option>
+                    <option value="2">MANSA Banque</option>
+                    <option value="2">Banque atlantique</option>
+                  </select>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button class="btn btn-info text-white">Valider</button>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-5">
-              <p>Pour éviter les erreur assurez-vous que les coordonnés sont correcte </p>
-            </div>
         </div>
-        <div class="container p-5">
-          <form action="" class="">
-            <div class="row">
-              <div class="mb-2 col-lg-6 col-sm-12 col-md-4 col-xl-6 p-4">
-                <label for="staticEmail" class="form-label">Numéro de compte du client</label>
-                  <input type="text"  class="form-control " id="staticEmail" placeholder="BQk-CI xxxx xxxx xxxx xxxx" required>
-              </div>
-              <div class="mb-2 col-lg-6 col-sm-12 col-md-4 col-xl-6 p-4">
-                <label for="staticEmail" class="form-label">Montant</label>
-                <div class="row">
-                  <div class="col-6 col-md-4 col-xl-4 ">
-                    <input type="number"  class="form-control  col-6" id="staticEmail" placeholder="Montant" required>
-                  </div>
-                  <div class="col-6 col-md-4 col-xl-4">
-                    <select class="form-select form-select mb-3 " aria-label=".form-select-lg example">
-                      <option selected>Devise</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="mb-2 col-lg-6 col-sm-12 col-md-4 col-xl-6 p-4">
-                <label for="staticEmail" class="form-label">Email du client</label>
-                  <input type="email"  class="form-control " id="staticEmail" placeholder="exemple@gmail.com"  required>
-              </div>
-              <div class="mb-2 col-lg-6 col-sm-12 col-md-4 col-xl-6 p-4">
-                <label for="staticEmail" class="form-label">code secret</label>
-                  <input type="email"  class="form-control " id="staticEmail"  placeholder="br79" required>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center">
-              
-              <button type="button" class="btn btn-valide" type="button">Valider</button>
-            </div>
-          </form>
-        </div>
+      </form>
     </div>
+   
     <footer class="bg-light text-center text-lg-start fixed-bottom">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: #4DB0BA;">
