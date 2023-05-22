@@ -78,3 +78,8 @@ h4{
 .code span{
     color: #4DB0BA;
 }
+#bttn{
+    background-color: #cd111a78;
+    color: #F7F7F7;
+    border-radius: 40px;
+}

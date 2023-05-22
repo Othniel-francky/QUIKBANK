@@ -13,7 +13,7 @@ header{
 }
 header img{
     float: left;
-    height: 5vh;
+    height: 5vh; 
     width: 5vw;
 }
 header h2{
