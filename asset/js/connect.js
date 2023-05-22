@@ -54,6 +54,14 @@ function verifpassword(password, verif) {
 
 
 btn.addEventListener("click", ()=> {
+const valEmail = verifEmail(email,emailCom)
+const valpass = verifpassword(password, password_c);
+if(valEmail == true){
+
+}
+else{
+    
+}
     
     console.log(document.querySelector(".statutCompte:checked").value)
 
