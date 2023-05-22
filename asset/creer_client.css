@@ -23,7 +23,6 @@ header h2{
 .auto{
     margin: auto;
     width: 70%;
-    padding: 1rem;
 }
 .bank{
     background-color: #FFF;
@@ -54,11 +53,6 @@ header h2{
     border-radius: 40px;
     color: #FFF;
     border: 1px solid #4DB0BA;
-}
-footer{
-    background-color: #4DB0BA;
-    text-align: center;
-    padding: 2rem;
 }
 .foot{
     background-color: #4DB0BA;
