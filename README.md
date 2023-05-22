@@ -31,6 +31,17 @@ Liste API
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/gestionCredite/
 - api epagne (post)
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/epargneSous/
+- api epargne all (get)
+- https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/epargneAll/
+- api epargne all user (get)
+- https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/epargneAllUser/:id
+- api epargne one by id (get)
+- https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/epargneOne/:id
 - api pret 
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/pret/
-- 
+- api pret all (get)
+- https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/pretAll/
+- api pret all user (get)
+- https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/pretAllUser/:id
+- api pret one by id (get)
+- https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/pretOne/:id
