@@ -10,7 +10,7 @@ let contact = document.querySelector(".contact");
 let email = document.querySelector(".email");
 let emailCom = document.querySelector(".emailCom");
 let genre = document.querySelector(".genre");
-let statutCompte = document.querySelectorAll(".statutCompte");
+let statutCompte = document.querySelector(".statutCompte");
 let statutExist = document.querySelectorAll('.statutExist');
 let carteVisa = document.querySelectorAll(".carteVisa");
 let password = document.querySelector(".password");
@@ -32,13 +32,6 @@ function verifpassword(password, verif) {
 }
 
 
-for (var i = 0; i <  statutCompte.length; i++) {
-    if (statutCompte[i].checked) {
-      console.log(statutCompte[i].value);
-      break;
-    }
-  }
-    
 
 // verification de notre password
 // function Staus(event) {
@@ -62,7 +55,7 @@ for (var i = 0; i <  statutCompte.length; i++) {
 
 btn.addEventListener("click", ()=> {
     
-    
+    console.log(document.querySelector(".statutCompte:checked").value)
 
 
 })
