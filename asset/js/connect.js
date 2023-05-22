@@ -58,12 +58,14 @@ const valEmail = verifEmail(email,emailCom)
 const valpass = verifpassword(password, password_c);
 if(valEmail == true){
 
+
 }
 else{
-    
+    document.querySelector("verifemail").textContent = "Email incorrect!!";
+
 }
     
-    console.log(document.querySelector(".statutCompte:checked").value)
+    // console.log(document.querySelector(".statutCompte:checked").value)
 
 
 })
