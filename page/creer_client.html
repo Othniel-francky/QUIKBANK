@@ -15,58 +15,72 @@
             <a href="../index.html"><img src="../images/logo.png" alt=""></a>
             <h2>Créer un nouveau compte</h2>
         </header>
-        <div class=" container auto p-2">
-            <div class="container bank">
-                <div class="ipt">
-                    <input type="text" placeholder="Nom *"><br>
-                    <input type="text" placeholder="Prenom *"><br>
-                    <input type="text" placeholder="Adresse *"><br>
-                    <input type="text" placeholder="Ville *"><br>
-                    <input type="text" placeholder="Contact *"><br>
-                    <input type="text" placeholder="Email *"><br>
-                    <input type="text" placeholder="Confirmation de votre email *">
-                </div>
-            </div>
-
-            <div class="container milieu">
-                <div class="container sexe">
-                    <h4><b>SEXE</b></h4>
-                    <div class="container d-flex justify-content-between">
-                        <div><input type="radio" name="choix" class="radio"><label for="text">HOMME</label></div>
-                        <div><input type="radio" name="choix" class="radio"><label for="text">FEMME</label></div>
+        <div class=" container auto p-4">
+            <form action="" class="myForm">
+                <div class="container bank">
+                    <div class="ipt">
+                        <input type="text" class="nom" placeholder="Nom *"><br>
+                        <input type="text" class="prenom" placeholder="Prenom *"><br>
+                        <input type="text" class="adresse" placeholder="Adresse *"><br>
+                        <input type="text" class="pays" placeholder="pays *"><br>
+                        <input type="number" class="contact" placeholder="Contact *"><br>
+                        <input type="email" class="email" placeholder="Email *"><br>
+                        <input type="email" class="emailCom" placeholder="Confirmation de votre email *">
                     </div>
                 </div>
-                <div class="container-fluid row">
-                    <label for="text">Quel type de compte souhaitez-vous ouvrir* ?</label><br>
-                    <div class="container">
+    
+                <div class="container milieu">
+                    <div class="container sexe">
+                        <h4><b>SEXE</b></h4>
                         <div class="container d-flex justify-content-between">
-
-                            <a href="#" class="btn btn-info" id="blanc">Individuel</a><a href="" class="btn btn-info" id="bleu">Visa</a>
-                        </div><br>
-                        <label for="text">Êtes-vous déjà client d’une banque ou de Quick Bank * ?</label><br>
-                        <div class="container d-flex justify-content-between">
-                            <a href="#" class="btn btn-info" id="blanc">Oui</a><a href="#" class="btn btn-info" id="bleu">Non</a>
-                        </div><br>
-                        <label for="text">Avez vous déja une carte Non * ?</label><br>
-                        <div class="container d-flex justify-content-between">
-                            <a href="#" class="btn btn-info" id="blanc">Oui</a><a href="#" class="btn btn-info" id="bleu">Non</a>
-                        </div><br>
+                            <div><input type="radio" name="choix" class="genre" class="radio"><label for="text">HOMME</label></div>
+                            <div><input type="radio" name="choix" class="radio genre"><label for="text">FEMME</label></div>
+                        </div>
+                    </div>
+                    <div class="container-fluid row">
+                        <label for="text">Quel type de compte souhaitez-vous ouvrir* ?</label><br>
+                        <div class="container">
+                           
+                            <div class="container d-flex justify-content-between">
+                                <div class="blancS"><input type="radio" name="choix" class="statutCompte" id="sta" value="courant"><label for="text">Courant</label></div>
+                                <div class="blancS"><input type="radio" name="choix" class="radio statutCompte" id="sta" value="epargne"><label for="text">Epargne</label></div>
+                            </div><br>
+                            <label for="text">Êtes-vous déjà client d’une banque ou de Quick Bank * ?</label><br>
+                            <div class="container d-flex justify-content-between">
+                                <div class="blancS"><input type="radio" name="choix" class="comptSta" class="radio"><label for="text">Oui</label></div>
+                                <div class="blancS"><input type="radio" name="choix" class="radio comptSta"><label for="text">Non</label></div>
+                            </div><br>
+                            <label for="text">Avez vous déja une carte Non * ?</label><br>
+                            <div class="container d-flex justify-content-between">
+                                <div class="blancS"><input type="radio" name="choix" class="comptSta" class="radio"><label for="text">Oui</label></div>
+                                <div class="blancS"><input type="radio" name="choix" class="radio comptSta"><label for="text">Non</label></div>
+                            </div><br>
+                        </div>
+                    </div>
+                    <div class="container bank m-1">
+                        <div class="ipt">
+                            <input type="password" class="password" placeholder="Mot de passe *"><br>
+                            <input type="password" class="password_c" placeholder="comfirmer *"><br>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button type="button" class="btn " id="bttn">Créer mon compte</button>
+                    </div>
+                    <div class="d-flex justify-content-between col-lg-12 ">
+                        <button type="button" class="btn  float-end" >Se connecter ?</button>
+                        <button type="button" class="btn  float-start" >Mot de passe oublié ?</button>
                     </div>
                 </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <button type="button" class="btn btn-lg" id="bttn">Créer mon compte</button>
-                </div>
-            </div>
+            </form>
+           
         </div>
-        <footer class="bg-light text-center text-lg-start fixed-bottom">
-        <!-- Copyright -->
+        <!-- <footer class="bg-light text-center text-lg-start fixed-bottom">
         <div class="text-center p-3" style="background-color: #4DB0BA;">
           © 2020 Copyright:
           <a class="text-dark" href="https://mdbootstrap.com/">Quick Banks</a>
         </div>
-        <!-- Copyright -->
-      </footer>
-   
+      </footer> -->
+    <script src="../asset/js/connect.js"></script>
     <script src="../dist/js/bootstrap.min.js"></script>
     <script src="../dist/js/bootstrap.js"></script>
 </body>

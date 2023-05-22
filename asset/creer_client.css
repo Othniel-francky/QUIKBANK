@@ -37,15 +37,22 @@ header h2{
     width: 100%;
 }
 #bleu{
-    border-radius: 40px;
-    color: #FFF;
-    background-color: #4DB0BA;
-    border: 1px solid #4DB0BA;
-}
-#blanc{
     background-color: #FFF;
     border-radius: 40px;
     color: #4DB0BA;
+}
+.blanc{
+    background-color: #FFF;
+    border-radius: 40px;
+    color: #4DB0BA;
+}
+.blancS{
+  
+    color: #4DB0BA;
+    background-color: #FFF;
+    width: 10rem;
+    height: 2rem;
+
 }
 
 #bttn{
