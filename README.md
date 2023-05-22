@@ -1,6 +1,6 @@
 ## Projet bank quick
 Liste API
-recuperation de tout les utilisateur (method post)
+- recuperation de tout les utilisateur (method post)
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/ 
 - api connection (method post)
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/login/
