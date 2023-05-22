@@ -20,12 +20,16 @@ Liste API
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/credite/
 - api credité all (get)
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/crediteAll/
+- api credité all user (get)
+- https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/crediteAlluser/:id
 - api credité by id
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/crediteOne/:id
 - api debité 
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/debite/
 - api debité all
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/debiteAll/
+- api debité all user (get)
+- https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/debiteAlluser/:id
 - api debité by id
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/crediteOne/:id
 - api gestion point relais 
