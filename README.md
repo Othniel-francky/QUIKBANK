@@ -12,6 +12,8 @@ Liste API
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/virement/
 - api recuperation tout virement
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/virementAll/
+- api virement all user
+- - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/virementAlluser/:id
 - api virement id (get)
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/virementOne/:id
 - api credité (post)
