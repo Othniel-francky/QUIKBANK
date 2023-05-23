@@ -34,9 +34,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
                 setTimeout(()=>{
                     window.location.href = "../../page/espaceClient.html"
-                },100)
-
-                console.log(data)
+                },200)
             }
             else{
                 let msg = document.querySelector(".msg")
