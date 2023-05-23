@@ -70,7 +70,7 @@ if( nom.value!="" && prenom.value != "" && adresse.value != "" && contact.value 
                             msg.textContent = "Merci pour votre inscription à Quick Bank,VOTRE RAPIDE ET FIABLE"
                             msg.style.color = "#4DB0BA"
                             setTimeout(()=>{
-                                window.location.href = "../../page/login.html"
+                                window.location.href = "../page/login.html"
                             },100)
 
 

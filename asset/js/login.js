@@ -33,13 +33,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 sessionStorage.setItem("sessionUser", JSON.stringify(data))
 
                 setTimeout(()=>{
-                    window.location.href = "../../page/espaceClient.html"
+                    window.location.href = "../page/espaceClient.html"
                 },200)
             }
             else{
                 let msg = document.querySelector(".msg")
                 msg.textContent = data.msg;
                 msg.style.color = "red"
+
+                setTimeout(()=>{
+                    window.location.reload()
+                }, 200)
             }
            
             
