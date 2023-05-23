@@ -32,38 +32,93 @@ function verifpassword(password, verif) {
 }
 
 
-
-// verification de notre password
-// function Staus(event) {
-    
-//     event.forEach(ele => ele.addEventListener("click", (e)=> {
-//         let data = ""
-//         if( e.target.getAttribute("id") == "staC"){
-//             document.getElementById("staE").style.display = "none";
-//             e.target.style.backgroundColor = "#4DB0BA"
-//             e.target.style.color = "white"
-//         }
-//         else{
-//             document.getElementById("staC").style.display = "none";
-//             e.target.style.backgroundColor = "#4DB0BA";
-//             e.target.style.color = "white"
-//         }
-//     }));
-// }
-// Staus(statutCompte);
-
-
 btn.addEventListener("click", ()=> {
-const valEmail = verifEmail(email,emailCom)
-const valpass = verifpassword(password, password_c);
-if(valEmail == true){
+
+if( nom.value!="" && prenom.value != "" && adresse.value != "" && contact.value != "" && pays.value != "" && genre.value != "" && email.value != "" && emailCom.value != "" && password.value != "" && password_c.value != ""){
+    const valEmail = verifEmail(email,emailCom)
+    const valpass = verifpassword(password, password_c);
+    if(valEmail == true){
+        if( valpass == true){
+            if( password.value.length >= 6){
+                if( contact.value.length >= 8){
+
+                    let data ={
+                        nom:nom.value,
+                        prenom:prenom.value,
+                        adresse:adresse.value,
+                        contact:contact.value,
+                        email:email.value,
+                        genre:document.querySelector(".genre:checked").value,
+                        pays:pays.value,
+                        statutCompte: document.querySelector(".statutCompte:checked").value,
+                        statutExist: document.querySelector(".statutExist:checked").value,
+                        carteVisa:  document.querySelector(".carteVisa:checked").value,
+                        password:  password.value
+                    }
+                    
+                    let request = new Request(api,{
+                        body:JSON.stringify(data),
+                        method:'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                        })
+                        fetch(request)
+                        .then(res => res.json())
+                        .then((data)=>{
+                            let msg = document.querySelector(".msg")
+                            msg.textContent = "Merci pour votre inscription à Quick Bank,VOTRE RAPIDE ET FIABLE"
+                            msg.style.color = "#4DB0BA"
+                            setTimeout(()=>{
+                                window.location.href = "../../page/login.html"
+                            },100)
 
 
+                            console.log(data.msg);
+                        })
+                        .catch(error=> console.log("une erreur est survenue"))
+                }
+                else{
+                    document.querySelector('.verifCon').textContent = "contact trop court"
+                    document.querySelector('.verifCon').style.color = "red"
+
+                    setTimeout(() => {
+                        window.location.reload(true);
+                      }, 200);
+                }
+            }
+            else{
+                document.querySelector('.verifpass').textContent = "Mot de passe trop court"
+                document.querySelector('.verifpass').style.color = "red"
+                setTimeout(() => {
+                    window.location.reload(true);
+                  },200); 
+
+            }
+        }
+        else{
+            document.querySelector('.verifpass').textContent = "Mot de passe incorrecte"
+            document.querySelector('.verifpass').style.color = "red"
+            setTimeout(() => {
+                window.location.reload(true);
+              },200);
+        }
+    }
+    else{
+        document.querySelector(".verifemail").textContent = "Email incorrect!!";
+        document.querySelector('.verifemail').style.color = "red"
+        
+    }
 }
 else{
-    document.querySelector("verifemail").textContent = "Email incorrect!!";
-
+    console.log("ok")
+    document.querySelector(".msg").textContent = "Veuillez rempli tout les champs";
+    document.querySelector('.msg').style.color = "red";
+    window.location.reload();
+    
+   
 }
+
     
     // console.log(document.querySelector(".statutCompte:checked").value)
 

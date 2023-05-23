@@ -24,8 +24,10 @@
                         <input type="text" class="adresse" placeholder="Adresse *"><br>
                         <input type="text" class="pays" placeholder="pays *"><br>
                         <input type="number" class="contact" placeholder="Contact *"><br>
+                        <p class="verifCon"></p>
                         <input type="email" class="email" placeholder="Email *"><br>
                         <input type="email" class="emailCom" placeholder="Confirmation de votre email *">
+                        <p class="verifemail"></p>
                     </div>
                 </div>
     
@@ -33,9 +35,9 @@
                     <div class="container sexe">
                         <h4><b>SEXE</b></h4>
                         <div class="container d-flex justify-content-between">
-                            <div><input type="radio" name="choix" class="genre" class="radio"><label for="text">HOMME</label></div>
-                            <div><input type="radio" name="choix" class="radio genre"><label for="text">FEMME</label></div>
-                            <span class="verifemail"></span>
+                            <div><input type="radio" name="choix" class="genre" class="radio" value="homme"><label for="text">HOMME</label></div>
+                            <div><input type="radio" name="choix" class="radio genre" value="femme"><label for="text">FEMME</label></div>
+                            
                         </div>
                     </div>
                     <div class="container-fluid row">
@@ -43,19 +45,19 @@
                         <div class="container">
                            
                             <div class="container d-flex justify-content-between">
-                                <div class="blancS"><input type="radio" name="choix" class="statutCompte" id="sta" value="courant"><label for="text">Courant</label></div>
-                                <div class="blancS"><input type="radio" name="choix" class="radio statutCompte" id="sta" value="epargne"><label for="text">Epargne</label></div>
+                                <div class="blancS"><input type="radio" name="choixC" class="statutCompte" id="sta" value="courant"><label for="text">Courant</label></div>
+                                <div class="blancS"><input type="radio" name="choixC" class="radio statutCompte" id="sta" value="epargne"><label for="text">Epargne</label></div>
                                 
                             </div><br>
                             <label for="text">Êtes-vous déjà client d’une banque ou de Quick Bank * ?</label><br>
                             <div class="container d-flex justify-content-between">
-                                <div class="blancS"><input type="radio" name="choix" class="comptSta" class="radio"><label for="text">Oui</label></div>
-                                <div class="blancS"><input type="radio" name="choix" class="radio comptSta"><label for="text">Non</label></div>
+                                <div class="blancS"><input type="radio" name="choixSta" class="statutExist" class="radio" value="Oui"><label for="text">Oui</label></div>
+                                <div class="blancS"><input type="radio" name="choixSta" class="radio statutExist" value="Non"><label for="text">Non</label></div>
                             </div><br>
                             <label for="text">Avez vous déja une carte Non * ?</label><br>
                             <div class="container d-flex justify-content-between">
-                                <div class="blancS"><input type="radio" name="choix" class="comptSta" class="radio"><label for="text">Oui</label></div>
-                                <div class="blancS"><input type="radio" name="choix" class="radio comptSta"><label for="text">Non</label></div>
+                                <div class="blancS"><input type="radio" name="choixVal" class="carteVisa" class="radio" value="Oui"><label for="text">Oui</label></div>
+                                <div class="blancS"><input type="radio" name="choixVal" class="radio carteVisa" value="Non"><label for="text">Non</label></div>
                             </div><br>
                         </div>
                     </div>
@@ -63,6 +65,7 @@
                         <div class="ipt">
                             <input type="password" class="password" placeholder="Mot de passe *"><br>
                             <input type="password" class="password_c" placeholder="comfirmer *"><br>
+                            <p class="verifpass"></p>
                         </div>
                     </div>
                     <div class="d-grid gap-2 col-6 mx-auto">
@@ -71,7 +74,9 @@
                     <div class="d-flex justify-content-between col-lg-12 ">
                         <button type="button" class="btn  float-end" >Se connecter ?</button>
                         <button type="button" class="btn  float-start" >Mot de passe oublié ?</button>
+                        
                     </div>
+                    <p class="msg"> </p>
                 </div>
             </form>
            
