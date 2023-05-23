@@ -16,18 +16,29 @@
         <h2>Créer un nouveau compte</h2>
     </header>
     <div class="container-fluid cadreCont d-flex justify-content-center">
-        <div class="container-div cadre">
-            <h4>1. IDENTIFIEZ-VOUS AVEC VOTRE EMAIL</h4>
-            <input type="text"><br>
-            <h4>2. VOTRE mot de passe (6 CHIFFRES)</h4>
-            <input type="text"><br>
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <button type="button" class="btn btn-lg" id="bttn">Connectez-vous</button>
+        <form class="formEle">
+            <div class="container cadre">
+                <h4>1. IDENTIFIEZ-VOUS AVEC VOTRE EMAIL</h4>
+                <input type="text" id="email"><br>
+                <h4>2. VOTRE mot de passe (6 CHIFFRES)</h4>
+                <input type="text" id="password"><br>
+                <div class="d-flex justify-content-center align-items-center col-12 ">
+                    <button type="button" class="btn " id="bttn">Connectez-vous</button>
+                    
+                </div>
+                <p class="msg" style="text-align:center;"></p>
+                <div class="row d-flex justify-content-between" >
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <p>Créer un compte <a href="creer_client.html"><span>ici</span></a></p> 
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <a href="forgot.html"><p>Code secret oublié ?</p></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="code container-fluid d-flex justify-content-between">
-                <p>Créer un compte <a href="creer_client.html"><span>ici</span></a></p> <a href="forgot.html"><p>Code secret oublié ?</p></a>
-            </div>
-        </div>
+        </form>
+        
     </div>
     <footer class="bg-light text-center text-lg-start fixed-bottom">
         <!-- Copyright -->
@@ -38,12 +49,7 @@
         <!-- Copyright -->
       </footer>
 
-   <script>
-    const rouge = document.querySelector(".rouge");
-    rouge.addEventListener('click', ()=>{
-        window.location.href = "espaceClient.html"
-    })
-   </script>
+      <script src="../asset/js/login.js"></script>
     <script src="dist/js/bootstrap.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
 </body>

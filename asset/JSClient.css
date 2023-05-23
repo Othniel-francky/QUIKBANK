@@ -9,12 +9,12 @@ body{
 header{
     width: 100%;
     background-color: #4DB0BA;
-    padding: 1rem;
+    padding: .8rem;
 }
 header img{
     float: left;
-    height: 5vh;
-    width: 5vw;
+    height: 2rem;
+    width: 5rem;
 }
 header h2{
     text-align: center;
@@ -22,7 +22,7 @@ header h2{
 }
 .cadreCont{
     background-color: #F7F7F7;
-    padding: 6rem;
+    padding: 2rem;
 }
 .cadre{
     border: 2px solid #4DB0BA;
@@ -81,5 +81,4 @@ h4{
 #bttn{
     background-color: #cd111a78;
     color: #F7F7F7;
-    border-radius: 40px;
 }

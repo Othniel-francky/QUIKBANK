@@ -76,7 +76,11 @@ if( nom.value!="" && prenom.value != "" && adresse.value != "" && contact.value 
 
                             console.log(data.msg);
                         })
-                        .catch(error=> console.log("une erreur est survenue"))
+                        .catch(error=> {
+                            let msg = document.querySelector(".msg")
+                            msg.textContent = error.message
+                            msg.style.color = "#4DB0BA"
+                        })
                 }
                 else{
                     document.querySelector('.verifCon').textContent = "contact trop court"
