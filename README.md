@@ -7,6 +7,7 @@ Liste API
 - api inscription (method post)
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/signup/
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/userOne/
+- https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/solde/:id
 - api modification de mot de passe (method put);
 - https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/updatePass/
 - api virement (post)
