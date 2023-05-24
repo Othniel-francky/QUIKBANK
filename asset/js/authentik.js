@@ -18,8 +18,7 @@ $(document).ready(function(){
     })
     .then((data) => {
         
-        $('.user').text(`${data.data.nom} ${data.data.prenom}`)
-        console.log(data)
+        $('.user').text(`${data.data.nom} ${data.data.prenom}`);
     })
     .catch((err => console.log(err)))
 
@@ -38,7 +37,6 @@ $(document).ready(function(){
     .then((data)=>{
         $('.soldy').text(`${data.data.solde} FrCFA`);
         $('.account').text(`${data.data.numeroCompte.split(" ").slice(1).join(" ")}`)
-        console.log(data)
     })
     .catch((err)=> console.log(err))
 });

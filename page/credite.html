@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credite</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../dist/css/bootstrap.css">
     <link rel="stylesheet" href="../asset/css/client.css">
@@ -79,29 +80,29 @@
             </div>
         </div>
         <div class="container p-5">
-          <form action="">
+          <form action="" class="myFormCre">
             <div class="row">
               <div class="mb-2 col-lg-6 col-sm-12 col-md-6 col-xl-6 p-1">
-                <label for="staticEmail" class="form-label">Moyen du transfert</label>
-                  <input type="text"  class="form-control " id="staticEmail" placeholder="(orange),(Mtn),(Moov)" required>
+                <label for="staticMoyen" class="form-label">Moyen du transfert</label>
+                  <input type="text"  class="form-control " id="staticMoyen" placeholder="(orange),(Mtn),(Moov)" required>
               </div>
               <div class="mb-2 col-lg-6 col-sm-12 col-md-6 col-xl-6 p-1">
-                <label for="staticEmail" class="form-label">Code valide</label>
-                  <input type="text"  class="form-control  col-6" id="staticEmail" placeholder="0000" required>
+                <label for="staticCode" class="form-label">Code valide</label>
+                  <input type="number"  class="form-control  col-6" id="staticCode" placeholder="0000" required>
               </div>
               <div class="mb-2 col-lg-6 col-sm-12 col-md-6 col-xl-6 p-1">
-                <label for="staticEmail" class="form-label">Montant</label>
-                  <input type="text"  class="form-control " id="staticEmail" placeholder="20000"  required>
+                <label for="staticMontant" class="form-label">Montant</label>
+                  <input type="number"  class="form-control " id="staticMontant" placeholder="20000"  required>
               </div>
               <div class="mb-2 col-lg-6 col-sm-12 col-md-6 col-xl-6 p-1">
-                <label for="staticEmail" class="form-label">Numéro</label>
-                  <input type="number"  class="form-control " id="staticEmail"  placeholder="0141822918" required>
+                <label for="staticnumero" class="form-label">Numéro</label>
+                  <input type="number"  class="form-control " id="staticnumero"  placeholder="0141822918" required>
               </div>
             </div>
             <div class="row d-flex justify-content-center">
               <div class="mb-2 col-lg-6 col-sm-12 col-md-6 col-xl-6 p-1">
-                <label for="staticEmail" class="form-label">code secret</label>
-                  <input type="email"  class="form-control " id="staticEmail"  placeholder="br79" required>
+                <label for="staticCodeSecret" class="form-label">code secret</label>
+                  <input type="text"  class="form-control " id="staticCodeSecret"  placeholder="br79" required>
               </div>
             </div>
             <div class=" row d-flex justify-content-between">
@@ -109,8 +110,9 @@
                 <p>Vous avez la possibilité de créditer votre compte dans un point de relais</p>
               </div>
               <div class="col-lg-6">
-                <button type="button" class="btn btn-valide" type="button">Valider</button>
+                <button type="button" class="btn btn-valide" type="button" id="validCre">Valider</button>
               </div>
+              <p class="infos"></p>
             </div>
           </form>
         </div>
@@ -132,6 +134,7 @@
      </script>
 
     <script src="../asset/js/authentik.js"></script>
+    <script src="../asset/js/credite.js"></script>
     <script src="../dist/js/bootstrap.js"></script>
     <script src="../dist/js/bootstrap.min.js"></script>
 </body>
