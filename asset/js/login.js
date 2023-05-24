@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', ()=>{
 
     let api = "https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/login/"
+    let url = "http://localhost:3000/api/login"
 
     let email = document.getElementById('email');
     let password = document.getElementById('password');
@@ -18,7 +19,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             password: password.value
         }
         
-        let request = new Request(api, {
+        let request = new Request(url, {
             body: JSON.stringify(data),
             headers: {'Content-Type': 'application/json'},
             method: 'POST'
@@ -26,7 +27,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
         fetch(request)
         .then((response) => response.json())
         .then((data)=>{
+            console.log(data)
             if( data.userId){
+    
                 let msg = document.querySelector(".msg")
                 msg.textContent = "inscription valider"
                 msg.style.color = "green"
