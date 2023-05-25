@@ -6,12 +6,7 @@ $(document).ready(function(){
     let url = `https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/solde/${user.userId}`
 
     if(user != null){
-
-    }
-    else{
-        window.location.href = "../page/login.html"
-    }
-
+        
     fetch(api, {
         headers: {
             "authorization": `token ${user.token}`
@@ -46,4 +41,9 @@ $(document).ready(function(){
         $('.account').text(`${data.data.numeroCompte.split(" ").slice(1).join(" ")}`)
     })
     .catch((err)=> console.log(err))
+    }
+    else{
+        window.location.href = "../page/login.html"
+    }
+
 });
