@@ -2,7 +2,7 @@ $(document).ready(()=>{
     let api = "https://courageous-churros-6e7c37.netlify.app/.netlify/functions/server/debite/";
     let sessionUser = sessionStorage.getItem("sessionUser");
     let user = JSON.parse(sessionUser)
-    
+
     if(user !=  null){
         $(".myFormDe").on("submit",(e)=>{
             e.preventDefault()
@@ -37,9 +37,15 @@ $(document).ready(()=>{
                     })
                     .then((data)=> {
                         $(".infos").text(data.msg).css("color","green")
+                        setTimeout(()=>{
+                            window.location.reload();
+                        },500)
                     })
                     .catch((err)=> {
                         $(".infos").text(err).css("color","red");
+                        setTimeout(()=>{
+                            window.location.reload();
+                        },1000)
                     })
                 }
                 else{

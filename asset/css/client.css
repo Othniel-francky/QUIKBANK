@@ -72,3 +72,16 @@ width: 200px;
 .h-epar-btn{
     height: 3.5rem;
 }
+.bi-send-fill,.bi-plus,.bi-save2-fill{
+    font-size:3rem;
+}
+.btnTr{
+    width: 8rem;
+    height: 10rem;
+}
+
+@media screen and (max-width : 1140px) {
+    .linkEle{
+        margin: 0;
+    }
+}
