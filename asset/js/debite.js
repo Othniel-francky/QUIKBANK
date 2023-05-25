@@ -39,27 +39,27 @@ $(document).ready(()=>{
                         $(".infos").text(data.msg).css("color","green")
                         setTimeout(()=>{
                             window.location.reload();
-                        },500)
+                        },2000)
                     })
                     .catch((err)=> {
                         $(".infos").text(err).css("color","red");
                         setTimeout(()=>{
                             window.location.reload();
-                        },1000)
+                        },2000)
                     })
                 }
                 else{
                     $(".infos").text("Numéro invalide").css("color","red");
                 setTimeout(()=>{
                     window.location.reload()
-                },500)
+                },2000)
                 }
             }
             else{
                 $(".infos").text("Veuillez remplir tous les champs").css("color","red");
                 setTimeout(()=>{
                     window.location.reload()
-                },500)
+                },2000)
             }
         })
     }

@@ -18,13 +18,13 @@ $(document).ready(()=>{
                 $(".infos").text("Veuillez remplir tous les champs !!").css("color","red");
                 setTimeout(()=>{
                     window.location.reload()
-                },500)
+                },2000)
             }
             else if( numero.length < 10){
                 $(".infos").text("Numéro invalide !!").css("color","red");
                 setTimeout(()=>{
                     window.location.reload()
-                },500)
+                },2000)
             }
             else{
                 let data = {
@@ -53,10 +53,12 @@ $(document).ready(()=>{
                         $(".infos").text(valeur.msg).css("color","green");
                         setTimeout(()=>{
                             window.location.reload();
-                        },300)
+                        },2000)
     
-                    };
-                    $(".infos").text(valeur.msg).css("color","red");
+                    }else{
+                        $(".infos").text(valeur.msg).css("color","red");
+                    }
+                   
                 })
                 .catch((err)=> console.log(err))
     

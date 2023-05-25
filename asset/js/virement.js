@@ -23,7 +23,6 @@ $(document).ready(()=>{
                     montant:montant,
                     codeSecret:codeSecret
                 }
-                console.log(data)
                 fetch(api, {
                     body:JSON.stringify(data),
                     method:'POST',
@@ -43,7 +42,7 @@ $(document).ready(()=>{
                         $(".infos").text(vire.msg).css("color","green");
                         setTimeout(()=>{
                             window.location.reload();
-                        },300)
+                        },2000)
     
                     }
                     $(".infos").text(vire.msg).css("color","red");

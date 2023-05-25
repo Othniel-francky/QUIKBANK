@@ -129,7 +129,7 @@
                             <p>Donnez une vie à vos projets.
                                 Un crédit vous engage et doit être remboursé. Vérifier vos capacité de remboursement avant de vous engager</p>
                         </div>
-                        <div class="col-lg-6"><button type="button" class="btn btn-outline-secondary">Prêt personnel</button></div>
+                        <div class="col-lg-6"><button type="button" class="btn btn-outline-secondary pretPer">Prêt personnel</button></div>
                     </div>
                 </div>
             </div>
@@ -163,9 +163,13 @@
       <script>
         let compt = document.querySelector(".compt");
         let eparg = document.querySelector('.eparg');
+        let pretPer = document.querySelector('.pretPer');
 
         compt.addEventListener("click", ()=>{
             window.location.href = "gestionCompte.html"
+        })
+        pretPer.addEventListener("click", ()=>{
+            window.location.href = "pret.html"
         })
 
         eparg.addEventListener('click', ()=>{
