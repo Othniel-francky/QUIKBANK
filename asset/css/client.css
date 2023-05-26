@@ -75,6 +75,10 @@ width: 200px;
 .bi-send-fill,.bi-plus,.bi-save2-fill{
     font-size:3rem;
 }
+.bi-journal-plus{
+    font-size: 5rem;
+    color:chartreuse;
+}
 .btnTr{
     width: 8rem;
     height: 10rem;

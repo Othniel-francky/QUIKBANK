@@ -38,14 +38,16 @@ $(document).ready(()=>{
                     return val.json()  
                 })
                 .then((vire)=> {
-                    if(vire.msg == "Virement effactué avec success !!!"){
+                    if(vire.msg == "Virement effectué avec success !!!"){
                         $(".infos").text(vire.msg).css("color","green");
                         setTimeout(()=>{
                             window.location.reload();
                         },2000)
-    
                     }
-                    $(".infos").text(vire.msg).css("color","red");
+                    else{
+                        $(".infos").text(vire.msg).css("color","red");
+                    }
+                    
                 })
                 .catch((err)=> {
                     $(".infos").text(err).css("color","red");
@@ -54,7 +56,6 @@ $(document).ready(()=>{
             else{
                 $(".infos").text("Veuillez remplir tous les champs !!").css("color","red");
             }
-          
         })
     }
     else{
