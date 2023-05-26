@@ -37,26 +37,25 @@ $(document).ready(()=>{
             return response.json()
         })
         .then((data)=> {
-           
-            console.log(data)
-            // for (let i = 0; i < feuille.length; i++) {
-            //     console.log(i)
-            //     $('.ajoutFeuil').append(`
-            //     <div class="col-lg-4 col-sm-4 col-md-4">
-            //     <div class="row text-center card">
-            //     <div class="col-lg-12">
-            //         <i class="bi bi-journal-plus"></i>
-            //     </div>
-            //     <div class="col-lg-12">
-            //         <h3>${feuille[i].status} ${i}</h3>
-            //     </div>
-            //     <div class="col-lg-12">
-            //         <p>M:${feuille[i].solde} FR</p>
-            //     </div>
-            //     </div>
-            //     </div>
-            //     `)
-            // }
+           let feuille = data.data
+            for (let i = 0; i < feuille.length; i++) {
+                console.log(i)
+                $('.ajoutFeuil').append(`
+                <div class="col-lg-4 col-sm-4 col-md-4">
+                <div class="row text-center card">
+                <div class="col-lg-12">
+                    <i class="bi bi-journal-plus"></i>
+                </div>
+                <div class="col-lg-12">
+                    <h3>${feuille[i].status} ${i}</h3>
+                </div>
+                <div class="col-lg-12">
+                    <p>M:${feuille[i].montant}Fr</p>
+                </div>
+                </div>
+                </div>
+                `)
+            }
         })
         .catch((err)=>{
             console.log(err)
