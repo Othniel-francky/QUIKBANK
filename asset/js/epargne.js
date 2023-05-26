@@ -65,7 +65,7 @@ $(document).ready(()=>{
             }
         })
 
-        
+
     }
     else{
         window.location.href = "../page/login.html";

@@ -38,10 +38,11 @@ $(document).ready(()=>{
         })
         .then((data)=> {
            let feuille = data.data
+           console.log(feuille)
             for (let i = 0; i < feuille.length; i++) {
-                console.log(i)
+                
                 $('.ajoutFeuil').append(`
-                <div class="col-lg-4 col-sm-4 col-md-4">
+                <div class="col-lg-3 col-sm-4 col-md-4">
                 <div class="row text-center card">
                 <div class="col-lg-12">
                     <i class="bi bi-journal-plus"></i>
@@ -54,7 +55,36 @@ $(document).ready(()=>{
                 </div>
                 </div>
                 </div>
+                `);
+
+                let dat = new Date(feuille[i].date);
+                $('.histepargne').append(`
+                <div class="row card p-4 ms-2 mb-2">
+              <div class="col-lg-12 col-md-10 col-sm-10 ">
+                  <div class="row">
+                      <div class="col-lg-6 col-sm-6 col-sm-6">
+                          <h6>Souscription</h6>
+                      </div>
+                      <div class="col-lg-6 col-sm-6 col-sm-6">
+                          <p>Date:${dat.getUTCDate()}/${dat.getMonth()}/${dat.getUTCFullYear()}</p>
+                      </div>
+                      <div class="col-lg-12 col-sm-6 col-sm-6">
+                          <p>Status: ${feuille[i].status}</p>
+                      </div>
+                     
+                      <div class="col-lg-12 col-sm-6 col-sm-6">
+                          <p>Montant:${feuille[i].montant}</p>
+                      </div>
+                      <div class="col-lg-12 col-sm-6 col-sm-6">
+                          <p>Numéro de transaction: ${feuille[i]._id}</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
                 `)
+
+
+
             }
         })
         .catch((err)=>{
