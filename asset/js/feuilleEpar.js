@@ -38,7 +38,6 @@ $(document).ready(()=>{
         })
         .then((data)=> {
            let feuille = data.data
-           console.log(feuille)
             for (let i = 0; i < feuille.length; i++) {
                 
                 $('.ajoutFeuil').append(`
@@ -51,7 +50,7 @@ $(document).ready(()=>{
                     <h3>${feuille[i].status} ${i}</h3>
                 </div>
                 <div class="col-lg-12">
-                    <p>Montant: ${feuille[i].montant}Fr</p>
+                    <p>Montant:${feuille[i].montant}Fr</p>
                 </div>
                 </div>
                 </div>
