@@ -36,10 +36,16 @@ $(document).ready(()=>{
                         return response.json()
                     })
                     .then((data)=> {
-                        $(".infos").text(data.msg).css("color","green")
+                        console.log(data)
+                        if(data.msg =="Compte debité !!!"){
+                            $(".infos").text(data.msg).css("color","green")
                         setTimeout(()=>{
                             window.location.reload();
                         },2000)
+                        }
+                        else{
+                            $(".infos").text(data.msg).css("color","red")
+                        }
                     })
                     .catch((err)=> {
                         $(".infos").text(err).css("color","red");
