@@ -51,7 +51,7 @@ $(document).ready(()=>{
                     <h3>${feuille[i].status} ${i}</h3>
                 </div>
                 <div class="col-lg-12">
-                    <p>M:${feuille[i].montant}Fr</p>
+                    <p>Montant: ${feuille[i].montant}Fr</p>
                 </div>
                 </div>
                 </div>
